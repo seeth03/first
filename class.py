@@ -1,14 +1,17 @@
-class Dog:
-    name = ""
-    age = ""
+class Animal:
+    def eat(self):
+        print('I can eat')
+    
+    def sleep(self):
+        print('I can sleep')
 
-Dog1 = Dog
-Dog1.name = 'tue'
-Dog1.age = 10
+class Tiger(Animal):
+    def hunt(self):
+        print('I can hunt')
 
-Dog2 = Dog
-Dog2.name = 'yue'
-Dog2.age = 15
+Tiger1 = Tiger()
 
-print(f'{Dog1.name} is {Dog1.age} yeras old')
-print(f'{Dog2.name} is {Dog2.age} years old')
+Tiger1.eat()
+Tiger1.sleep()
+
+Tiger1.hunt()
