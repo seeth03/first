@@ -17,8 +17,7 @@ Tiger1.sleep()
 Tiger1.hunt()
 
 #new
-a = int(input("enter a num"))
-if a%2 == 0:
-    print("even")
-else:
-    print("odd")
+import calendar
+yy= int(input('enter a year'))
+mm= int(input('enter a month'))
+print(calendar.month(yy,mm))
